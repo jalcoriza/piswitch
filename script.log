@@ -1,0 +1,8 @@
+Initializing GPIO...
+period = 30 seconds
+time = 86400 seconds
+num = 2880 times
+Set pin 4 (BCM) HIGH (# 0 )
+Set pin 4 (BCM) LOW (# 0 )
+Set pin 4 (BCM) HIGH (# 0 )
+Exiting...
