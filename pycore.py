@@ -19,6 +19,23 @@ t = 0
 hysteresis = False
 pir_count = 0
 pir_time = 60
+pir_time_begin = datetime.datetime.strptime('21:00', '%H:%M').time()
+pir_time_end = datetime.datetime.strptime('07:00', '%H:%M').time()
+
+def show_variables():
+    global hyteresis
+    global period
+    global t
+    global pir_count
+    global pir_time
+    global pir_time_begin
+    global pir_time_end
+
+    print(f'period={period}s, t={t}')
+    print(f'hysteresis={hysteresis}, pir_count={pir_count}, pir_time={pir_time}')
+    print(f'pir_time_begin={pir_time_begin}, pir_time_end={pir_time_end}')
+
+    return 0
 
 def init_gpio():
     # Initialize GPIO
@@ -56,21 +73,28 @@ def status_gpio():
 def process_pir():
     global hysteresis
     global pir_count
+    global pir_time_begin
+    global pir_time_end
 
-    if (hysteresis): 
-        pir_count += 1;
-        if (pir_count * period) > pir_time:
-            hysteresis = False
-            pir_count = 0
-
-    else:
-        if (input_gpio[0]==GPIO.HIGH):
-            output_gpio[0] = GPIO.LOW
-            hysteresis = True
-            print(f'{datetime.datetime.now()} detected movement! turn on the light!')
+    time_now = datetime.datetime.now().time()
+    if (time_now > pir_time_begin) or (time_now < pir_time_end):  
+        if (hysteresis): 
+            pir_count += 1;
+            if (pir_count * period) > pir_time:
+                hysteresis = False
+                pir_count = 0
 
         else:
-            output_gpio[0] = GPIO.HIGH
+            if (input_gpio[0]==GPIO.HIGH):
+                output_gpio[0] = GPIO.LOW
+                hysteresis = True
+                print(f'{datetime.datetime.now()} detected movement! turn on the light!')
+
+            else:
+                output_gpio[0] = GPIO.HIGH
+
+    else:
+        print(f'{datetime.datetime.now()} now={time_now} is outside ({pir_time_begin},{pir_time_end})')
 
 
     return 0
@@ -88,7 +112,7 @@ output_gpio = [GPIO.HIGH, GPIO.HIGH, GPIO.HIGH, GPIO.HIGH, GPIO.HIGH]
 input_gpio = [GPIO.LOW, GPIO.LOW]
 
 print('Initializing GPIO...')
-print(f'period={period}s, time={t}s')
+show_variables()
 init_gpio()
 
 print('Initializing relays OUTPUT as HIGH...')
