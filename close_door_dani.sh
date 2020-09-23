@@ -5,5 +5,5 @@
 # format
 # written | read, input(n), value
 # [w]|[r],[jav]|[dan],[0-2],[0]|[1]
-echo 'r,jav,4,1' >> /home/pi/Projects/piswitch/command.csv
+echo 'r,dan,4,1' >> /home/pi/Projects/piswitch/command.csv
 #exit
