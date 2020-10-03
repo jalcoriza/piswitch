@@ -157,12 +157,12 @@ def process_door():
 
     else:
         if (input_gpio[4] == GPIO.HIGH):
-            #output_gpio[1] = GPIO.LOW
+            output_gpio[1] = GPIO.LOW
             door_hysteresis = True
             print(f'{datetime.datetime.now()} Open/Close the door!')
 
         else:
-            #output_gpio[1] = GPIO.HIGH
+            output_gpio[1] = GPIO.HIGH
             print(f'{datetime.datetime.now()} Reseting the door\'s relay!')
                 
     return 0

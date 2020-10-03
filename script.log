@@ -1,8 +1,473 @@
 Initializing GPIO...
-period = 30 seconds
-time = 86400 seconds
-num = 2880 times
-Set pin 4 (BCM) HIGH (# 0 )
-Set pin 4 (BCM) LOW (# 0 )
-Set pin 4 (BCM) HIGH (# 0 )
-Exiting...
+period=0.5s, t=0
+door_hysteresis=False, door_count=0, door_time=2
+pir_hysteresis=False, pir_count=0, pir_time=60
+pir_time_begin=20:00:00, pir_time_end=08:00:00
+Initializing relays OUTPUT as HIGH...
+2020-09-23 23:42:29.192967 Reseting the door's relay!
+2020-09-23 23:42:29.194542 Processed 0 lines
+2020-09-23 23:42:29.195022 Save lines= []
+2020-09-23 23:42:29.196436 Updating csv file
+2020-09-23 23:42:29.196821 Updated csv file with 0 lines
+2020-09-23 23:42:29.197286 input=[1, 1, 0, 0, 0] output=[1, 1, 1, 1, 1]
+2020-09-23 23:42:29.698353 Reseting the door's relay!
+2020-09-23 23:42:29.698757 detected movement! turn on the light!
+2020-09-23 23:42:29.700638 Processed 0 lines
+2020-09-23 23:42:29.701117 Save lines= []
+2020-09-23 23:42:29.702383 Updating csv file
+2020-09-23 23:42:29.702748 Updated csv file with 0 lines
+2020-09-23 23:42:29.703208 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:30.204186 Reseting the door's relay!
+2020-09-23 23:42:30.205814 Processed 0 lines
+2020-09-23 23:42:30.206286 Save lines= []
+2020-09-23 23:42:30.207541 Updating csv file
+2020-09-23 23:42:30.207906 Updated csv file with 0 lines
+2020-09-23 23:42:30.208501 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:30.709453 Reseting the door's relay!
+2020-09-23 23:42:30.711272 Processed 0 lines
+2020-09-23 23:42:30.711747 Save lines= []
+2020-09-23 23:42:30.713129 Updating csv file
+2020-09-23 23:42:30.713501 Updated csv file with 0 lines
+2020-09-23 23:42:30.713964 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:31.217884 Reseting the door's relay!
+2020-09-23 23:42:31.219511 Processed 0 lines
+2020-09-23 23:42:31.220250 Save lines= []
+2020-09-23 23:42:31.221527 Updating csv file
+2020-09-23 23:42:31.221897 Updated csv file with 0 lines
+2020-09-23 23:42:31.222353 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:31.723339 Reseting the door's relay!
+2020-09-23 23:42:31.724956 Processed 0 lines
+2020-09-23 23:42:31.725425 Save lines= []
+2020-09-23 23:42:31.726693 Updating csv file
+2020-09-23 23:42:31.727123 Updated csv file with 0 lines
+2020-09-23 23:42:31.727588 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:32.228579 Reseting the door's relay!
+2020-09-23 23:42:32.230345 Processed 0 lines
+2020-09-23 23:42:32.230827 Save lines= []
+2020-09-23 23:42:32.232210 Updating csv file
+2020-09-23 23:42:32.232584 Updated csv file with 0 lines
+2020-09-23 23:42:32.233037 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:32.734046 Reseting the door's relay!
+2020-09-23 23:42:32.735674 Processed 0 lines
+2020-09-23 23:42:32.736269 Save lines= []
+2020-09-23 23:42:32.737545 Updating csv file
+2020-09-23 23:42:32.737912 Updated csv file with 0 lines
+2020-09-23 23:42:32.738380 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:33.239372 Reseting the door's relay!
+2020-09-23 23:42:33.241324 Processed 0 lines
+2020-09-23 23:42:33.241797 Save lines= []
+2020-09-23 23:42:33.243049 Updating csv file
+2020-09-23 23:42:33.243418 Updated csv file with 0 lines
+2020-09-23 23:42:33.243868 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:33.744853 Reseting the door's relay!
+2020-09-23 23:42:33.746469 Processed 0 lines
+2020-09-23 23:42:33.746939 Save lines= []
+2020-09-23 23:42:33.753405 Updating csv file
+2020-09-23 23:42:33.753789 Updated csv file with 0 lines
+2020-09-23 23:42:33.754685 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:34.255738 Reseting the door's relay!
+2020-09-23 23:42:34.257463 Processed 0 lines
+2020-09-23 23:42:34.257944 Save lines= []
+2020-09-23 23:42:34.259221 Updating csv file
+2020-09-23 23:42:34.259827 Updated csv file with 0 lines
+2020-09-23 23:42:34.260340 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:34.761334 Reseting the door's relay!
+2020-09-23 23:42:34.762981 Processed 0 lines
+2020-09-23 23:42:34.763471 Save lines= []
+2020-09-23 23:42:34.764733 Updating csv file
+2020-09-23 23:42:34.765106 Updated csv file with 0 lines
+2020-09-23 23:42:34.765555 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:35.266535 Reseting the door's relay!
+2020-09-23 23:42:35.268145 Processed 0 lines
+2020-09-23 23:42:35.268619 Save lines= []
+2020-09-23 23:42:35.270142 Updating csv file
+2020-09-23 23:42:35.270520 Updated csv file with 0 lines
+2020-09-23 23:42:35.270980 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:35.771989 Reseting the door's relay!
+2020-09-23 23:42:35.773631 Processed 0 lines
+2020-09-23 23:42:35.774123 Save lines= []
+2020-09-23 23:42:35.775382 Updating csv file
+2020-09-23 23:42:35.775757 Updated csv file with 0 lines
+2020-09-23 23:42:35.776613 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:36.277633 Reseting the door's relay!
+2020-09-23 23:42:36.279261 Processed 0 lines
+2020-09-23 23:42:36.280092 Save lines= []
+2020-09-23 23:42:36.281405 Updating csv file
+2020-09-23 23:42:36.281773 Updated csv file with 0 lines
+2020-09-23 23:42:36.282229 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:36.783222 Reseting the door's relay!
+2020-09-23 23:42:36.785066 Processed 0 lines
+2020-09-23 23:42:36.785548 Save lines= []
+2020-09-23 23:42:36.786805 Updating csv file
+2020-09-23 23:42:36.787192 Updated csv file with 0 lines
+2020-09-23 23:42:36.787651 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:37.288638 Reseting the door's relay!
+2020-09-23 23:42:37.290523 Processed 0 lines
+2020-09-23 23:42:37.291000 Save lines= []
+2020-09-23 23:42:37.292265 Updating csv file
+2020-09-23 23:42:37.292637 Updated csv file with 0 lines
+2020-09-23 23:42:37.293095 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:37.794086 Reseting the door's relay!
+2020-09-23 23:42:37.795709 Processed 0 lines
+2020-09-23 23:42:37.796183 Save lines= []
+2020-09-23 23:42:37.797441 Updating csv file
+2020-09-23 23:42:37.797810 Updated csv file with 0 lines
+2020-09-23 23:42:37.798261 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:38.299245 Reseting the door's relay!
+2020-09-23 23:42:38.301060 Processed 0 lines
+2020-09-23 23:42:38.301553 Save lines= []
+2020-09-23 23:42:38.302808 Updating csv file
+2020-09-23 23:42:38.303172 Updated csv file with 0 lines
+2020-09-23 23:42:38.303627 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:38.804727 Reseting the door's relay!
+2020-09-23 23:42:38.806352 Processed 0 lines
+2020-09-23 23:42:38.806821 Save lines= []
+2020-09-23 23:42:39.049331 Updating csv file
+2020-09-23 23:42:39.050299 Updated csv file with 0 lines
+2020-09-23 23:42:39.050833 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:39.551898 Reseting the door's relay!
+2020-09-23 23:42:39.553522 Processed 0 lines
+2020-09-23 23:42:39.553993 Save lines= []
+2020-09-23 23:42:39.555273 Updating csv file
+2020-09-23 23:42:39.555642 Updated csv file with 0 lines
+2020-09-23 23:42:39.556093 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:40.057069 Reseting the door's relay!
+2020-09-23 23:42:40.058667 Processed 0 lines
+2020-09-23 23:42:40.059157 Save lines= []
+2020-09-23 23:42:40.060759 Updating csv file
+2020-09-23 23:42:40.061138 Updated csv file with 0 lines
+2020-09-23 23:42:40.061596 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:40.562578 Reseting the door's relay!
+2020-09-23 23:42:40.564588 Processed 0 lines
+2020-09-23 23:42:40.565109 Save lines= []
+2020-09-23 23:42:40.566385 Updating csv file
+2020-09-23 23:42:40.566753 Updated csv file with 0 lines
+2020-09-23 23:42:40.567205 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:41.068193 Reseting the door's relay!
+2020-09-23 23:42:41.069962 Processed 0 lines
+2020-09-23 23:42:41.070443 Save lines= []
+2020-09-23 23:42:41.071828 Updating csv file
+2020-09-23 23:42:41.072207 Updated csv file with 0 lines
+2020-09-23 23:42:41.072661 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:41.573661 Reseting the door's relay!
+2020-09-23 23:42:41.575270 Processed 0 lines
+2020-09-23 23:42:41.575862 Save lines= []
+2020-09-23 23:42:41.577132 Updating csv file
+2020-09-23 23:42:41.577517 Updated csv file with 0 lines
+2020-09-23 23:42:41.578099 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:42.079098 Reseting the door's relay!
+2020-09-23 23:42:42.096007 Processed 0 lines
+2020-09-23 23:42:42.096497 Save lines= []
+2020-09-23 23:42:42.097768 Updating csv file
+2020-09-23 23:42:42.098142 Updated csv file with 0 lines
+2020-09-23 23:42:42.098600 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:42.599719 Reseting the door's relay!
+2020-09-23 23:42:42.601354 Processed 0 lines
+2020-09-23 23:42:42.601948 Save lines= []
+2020-09-23 23:42:42.603230 Updating csv file
+2020-09-23 23:42:42.603602 Updated csv file with 0 lines
+2020-09-23 23:42:42.604057 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:43.105050 Reseting the door's relay!
+2020-09-23 23:42:43.106675 Processed 0 lines
+2020-09-23 23:42:43.107154 Save lines= []
+2020-09-23 23:42:43.108409 Updating csv file
+2020-09-23 23:42:43.108779 Updated csv file with 0 lines
+2020-09-23 23:42:43.109235 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:43.610237 Reseting the door's relay!
+2020-09-23 23:42:43.611865 Processed 0 lines
+2020-09-23 23:42:43.612340 Save lines= []
+2020-09-23 23:42:43.613609 Updating csv file
+2020-09-23 23:42:43.613982 Updated csv file with 0 lines
+2020-09-23 23:42:43.614438 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:44.115447 Reseting the door's relay!
+2020-09-23 23:42:44.117076 Processed 0 lines
+2020-09-23 23:42:44.117550 Save lines= []
+2020-09-23 23:42:44.573225 Updating csv file
+2020-09-23 23:42:44.573612 Updated csv file with 0 lines
+2020-09-23 23:42:44.574075 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:45.075109 Reseting the door's relay!
+2020-09-23 23:42:45.076754 Processed 0 lines
+2020-09-23 23:42:45.077227 Save lines= []
+2020-09-23 23:42:45.078496 Updating csv file
+2020-09-23 23:42:45.078873 Updated csv file with 0 lines
+2020-09-23 23:42:45.079324 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:45.590688 Reseting the door's relay!
+2020-09-23 23:42:45.592453 Processed 0 lines
+2020-09-23 23:42:45.592930 Save lines= []
+2020-09-23 23:42:45.594202 Updating csv file
+2020-09-23 23:42:45.594571 Updated csv file with 0 lines
+2020-09-23 23:42:45.595028 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:46.096099 Reseting the door's relay!
+2020-09-23 23:42:46.097736 raw_command=,['r', 'jav', '4', '1']
+2020-09-23 23:42:46.098032 new command!
+2020-09-23 23:42:46.098289 command=door,1
+2020-09-23 23:42:46.098704 Processed 1 lines
+2020-09-23 23:42:46.099127 Save lines= []
+2020-09-23 23:42:46.126037 Updating csv file
+2020-09-23 23:42:46.126426 Updated csv file with 0 lines
+2020-09-23 23:42:46.126897 input=[1, 1, 0, 0, 1] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:46.627909 Open/Close the door!
+2020-09-23 23:42:46.629549 Processed 0 lines
+2020-09-23 23:42:46.630298 Save lines= []
+2020-09-23 23:42:46.631701 Updating csv file
+2020-09-23 23:42:46.632079 Updated csv file with 0 lines
+2020-09-23 23:42:46.632536 input=[1, 1, 0, 0, 1] output=[0, 0, 1, 1, 1]
+2020-09-23 23:42:47.134926 Processed 0 lines
+2020-09-23 23:42:47.135470 Save lines= []
+2020-09-23 23:42:47.136797 Updating csv file
+2020-09-23 23:42:47.137169 Updated csv file with 0 lines
+2020-09-23 23:42:47.137624 input=[1, 1, 0, 0, 1] output=[0, 0, 1, 1, 1]
+2020-09-23 23:42:47.640563 Processed 0 lines
+2020-09-23 23:42:47.641042 Save lines= []
+2020-09-23 23:42:47.642324 Updating csv file
+2020-09-23 23:42:47.642697 Updated csv file with 0 lines
+2020-09-23 23:42:47.643148 input=[1, 1, 0, 0, 1] output=[0, 0, 1, 1, 1]
+2020-09-23 23:42:48.145559 Processed 0 lines
+2020-09-23 23:42:48.146037 Save lines= []
+2020-09-23 23:42:48.147304 Updating csv file
+2020-09-23 23:42:48.147678 Updated csv file with 0 lines
+2020-09-23 23:42:48.148124 input=[1, 1, 0, 0, 1] output=[0, 0, 1, 1, 1]
+2020-09-23 23:42:48.650635 Processed 0 lines
+2020-09-23 23:42:48.651114 Save lines= []
+2020-09-23 23:42:48.652371 Updating csv file
+2020-09-23 23:42:48.652760 Updated csv file with 0 lines
+2020-09-23 23:42:48.653211 input=[1, 1, 0, 0, 1] output=[0, 0, 1, 1, 1]
+2020-09-23 23:42:49.155606 Processed 0 lines
+2020-09-23 23:42:49.156078 Save lines= []
+2020-09-23 23:42:49.398709 Updating csv file
+2020-09-23 23:42:49.399094 Updated csv file with 0 lines
+2020-09-23 23:42:49.400345 input=[1, 1, 0, 0, 0] output=[0, 0, 1, 1, 1]
+2020-09-23 23:42:49.901394 Reseting the door's relay!
+2020-09-23 23:42:49.903021 Processed 0 lines
+2020-09-23 23:42:49.903611 Save lines= []
+2020-09-23 23:42:49.904909 Updating csv file
+2020-09-23 23:42:49.905282 Updated csv file with 0 lines
+2020-09-23 23:42:49.905734 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:50.406737 Reseting the door's relay!
+2020-09-23 23:42:50.408455 Processed 0 lines
+2020-09-23 23:42:50.408930 Save lines= []
+2020-09-23 23:42:50.410317 Updating csv file
+2020-09-23 23:42:50.410689 Updated csv file with 0 lines
+2020-09-23 23:42:50.411143 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:50.912149 Reseting the door's relay!
+2020-09-23 23:42:50.913783 Processed 0 lines
+2020-09-23 23:42:50.914255 Save lines= []
+2020-09-23 23:42:50.915515 Updating csv file
+2020-09-23 23:42:50.915886 Updated csv file with 0 lines
+2020-09-23 23:42:50.916339 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:51.417320 Reseting the door's relay!
+2020-09-23 23:42:51.418947 Processed 0 lines
+2020-09-23 23:42:51.419437 Save lines= []
+2020-09-23 23:42:51.420843 Updating csv file
+2020-09-23 23:42:51.421212 Updated csv file with 0 lines
+2020-09-23 23:42:51.421661 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:51.922668 Reseting the door's relay!
+2020-09-23 23:42:51.924301 Processed 0 lines
+2020-09-23 23:42:51.924775 Save lines= []
+2020-09-23 23:42:51.926033 Updating csv file
+2020-09-23 23:42:51.926403 Updated csv file with 0 lines
+2020-09-23 23:42:51.926863 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:52.427863 Reseting the door's relay!
+2020-09-23 23:42:52.429506 Processed 0 lines
+2020-09-23 23:42:52.430247 Save lines= []
+2020-09-23 23:42:52.431647 Updating csv file
+2020-09-23 23:42:52.432020 Updated csv file with 0 lines
+2020-09-23 23:42:52.432478 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:52.933479 Reseting the door's relay!
+2020-09-23 23:42:52.935114 Processed 0 lines
+2020-09-23 23:42:52.935716 Save lines= []
+2020-09-23 23:42:52.936984 Updating csv file
+2020-09-23 23:42:52.937352 Updated csv file with 0 lines
+2020-09-23 23:42:52.937803 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:53.438807 Reseting the door's relay!
+2020-09-23 23:42:53.440652 Processed 0 lines
+2020-09-23 23:42:53.441126 Save lines= []
+2020-09-23 23:42:53.442385 Updating csv file
+2020-09-23 23:42:53.442757 Updated csv file with 0 lines
+2020-09-23 23:42:53.443210 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:53.944217 Reseting the door's relay!
+2020-09-23 23:42:53.945854 Processed 0 lines
+2020-09-23 23:42:53.946332 Save lines= []
+2020-09-23 23:42:53.947596 Updating csv file
+2020-09-23 23:42:53.947968 Updated csv file with 0 lines
+2020-09-23 23:42:53.948422 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:54.449430 Reseting the door's relay!
+2020-09-23 23:42:54.451185 Processed 0 lines
+2020-09-23 23:42:54.451655 Save lines= []
+2020-09-23 23:42:54.455585 Updating csv file
+2020-09-23 23:42:54.456037 Updated csv file with 0 lines
+2020-09-23 23:42:54.456513 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:54.957507 Reseting the door's relay!
+2020-09-23 23:42:54.959209 Processed 0 lines
+2020-09-23 23:42:54.959987 Save lines= []
+2020-09-23 23:42:54.961307 Updating csv file
+2020-09-23 23:42:54.961679 Updated csv file with 0 lines
+2020-09-23 23:42:54.962131 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:55.463168 Reseting the door's relay!
+2020-09-23 23:42:55.464853 Processed 0 lines
+2020-09-23 23:42:55.465326 Save lines= []
+2020-09-23 23:42:55.466581 Updating csv file
+2020-09-23 23:42:55.466951 Updated csv file with 0 lines
+2020-09-23 23:42:55.467406 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:55.968419 Reseting the door's relay!
+2020-09-23 23:42:55.970566 Processed 0 lines
+2020-09-23 23:42:55.971066 Save lines= []
+2020-09-23 23:42:55.972337 Updating csv file
+2020-09-23 23:42:55.972704 Updated csv file with 0 lines
+2020-09-23 23:42:55.989306 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:56.490534 Reseting the door's relay!
+2020-09-23 23:42:56.492186 Processed 0 lines
+2020-09-23 23:42:56.492659 Save lines= []
+2020-09-23 23:42:56.493927 Updating csv file
+2020-09-23 23:42:56.494298 Updated csv file with 0 lines
+2020-09-23 23:42:56.494751 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:56.995806 Reseting the door's relay!
+2020-09-23 23:42:56.997458 Processed 0 lines
+2020-09-23 23:42:56.997931 Save lines= []
+2020-09-23 23:42:56.999318 Updating csv file
+2020-09-23 23:42:56.999826 Updated csv file with 0 lines
+2020-09-23 23:42:57.000305 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:57.501315 Reseting the door's relay!
+2020-09-23 23:42:57.502952 Processed 0 lines
+2020-09-23 23:42:57.503550 Save lines= []
+2020-09-23 23:42:57.504818 Updating csv file
+2020-09-23 23:42:57.505190 Updated csv file with 0 lines
+2020-09-23 23:42:57.505653 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:58.006661 Reseting the door's relay!
+2020-09-23 23:42:58.008390 Processed 0 lines
+2020-09-23 23:42:58.008861 Save lines= []
+2020-09-23 23:42:58.010239 Updating csv file
+2020-09-23 23:42:58.010625 Updated csv file with 0 lines
+2020-09-23 23:42:58.011079 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:58.512064 Reseting the door's relay!
+2020-09-23 23:42:58.513693 Processed 0 lines
+2020-09-23 23:42:58.514165 Save lines= []
+2020-09-23 23:42:58.515435 Updating csv file
+2020-09-23 23:42:58.515817 Updated csv file with 0 lines
+2020-09-23 23:42:58.516272 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:59.017269 Reseting the door's relay!
+2020-09-23 23:42:59.018911 Processed 0 lines
+2020-09-23 23:42:59.019385 Save lines= []
+2020-09-23 23:42:59.020914 Updating csv file
+2020-09-23 23:42:59.021295 Updated csv file with 0 lines
+2020-09-23 23:42:59.021760 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:42:59.522763 Reseting the door's relay!
+2020-09-23 23:42:59.524406 Processed 0 lines
+2020-09-23 23:42:59.524879 Save lines= []
+2020-09-23 23:42:59.768030 Updating csv file
+2020-09-23 23:42:59.768418 Updated csv file with 0 lines
+2020-09-23 23:42:59.769403 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:00.270649 Reseting the door's relay!
+2020-09-23 23:43:00.272381 Processed 0 lines
+2020-09-23 23:43:00.272852 Save lines= []
+2020-09-23 23:43:00.274132 Updating csv file
+2020-09-23 23:43:00.274504 Updated csv file with 0 lines
+2020-09-23 23:43:00.274957 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:00.775957 Reseting the door's relay!
+2020-09-23 23:43:00.777832 Processed 0 lines
+2020-09-23 23:43:00.778310 Save lines= []
+2020-09-23 23:43:00.779706 Updating csv file
+2020-09-23 23:43:00.780108 Updated csv file with 0 lines
+2020-09-23 23:43:00.780575 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:01.281586 Reseting the door's relay!
+2020-09-23 23:43:01.283210 Processed 0 lines
+2020-09-23 23:43:01.283682 Save lines= []
+2020-09-23 23:43:01.284944 Updating csv file
+2020-09-23 23:43:01.285317 Updated csv file with 0 lines
+2020-09-23 23:43:01.285771 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:01.786747 Reseting the door's relay!
+2020-09-23 23:43:01.788363 Processed 0 lines
+2020-09-23 23:43:01.788852 Save lines= []
+2020-09-23 23:43:01.790398 Updating csv file
+2020-09-23 23:43:01.790772 Updated csv file with 0 lines
+2020-09-23 23:43:01.791354 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:02.292341 Reseting the door's relay!
+2020-09-23 23:43:02.293951 Processed 0 lines
+2020-09-23 23:43:02.294423 Save lines= []
+2020-09-23 23:43:02.295805 Updating csv file
+2020-09-23 23:43:02.296179 Updated csv file with 0 lines
+2020-09-23 23:43:02.296637 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:02.797678 Reseting the door's relay!
+2020-09-23 23:43:02.799461 Processed 0 lines
+2020-09-23 23:43:02.800158 Save lines= []
+2020-09-23 23:43:02.801445 Updating csv file
+2020-09-23 23:43:02.801816 Updated csv file with 0 lines
+2020-09-23 23:43:02.802275 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:03.303274 Reseting the door's relay!
+2020-09-23 23:43:03.304926 Processed 0 lines
+2020-09-23 23:43:03.305406 Save lines= []
+2020-09-23 23:43:03.306666 Updating csv file
+2020-09-23 23:43:03.307033 Updated csv file with 0 lines
+2020-09-23 23:43:03.307485 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:03.808472 Reseting the door's relay!
+2020-09-23 23:43:03.810228 Processed 0 lines
+2020-09-23 23:43:03.810725 Save lines= []
+2020-09-23 23:43:03.811991 Updating csv file
+2020-09-23 23:43:03.812364 Updated csv file with 0 lines
+2020-09-23 23:43:03.812822 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:04.313812 Reseting the door's relay!
+2020-09-23 23:43:04.315431 Processed 0 lines
+2020-09-23 23:43:04.315899 Save lines= []
+2020-09-23 23:43:04.317165 Updating csv file
+2020-09-23 23:43:04.317537 Updated csv file with 0 lines
+2020-09-23 23:43:04.317993 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:04.818988 Reseting the door's relay!
+2020-09-23 23:43:04.820728 Processed 0 lines
+2020-09-23 23:43:04.821204 Save lines= []
+2020-09-23 23:43:04.830473 Updating csv file
+2020-09-23 23:43:04.831038 Updated csv file with 0 lines
+2020-09-23 23:43:04.831531 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:05.332529 Reseting the door's relay!
+2020-09-23 23:43:05.334164 Processed 0 lines
+2020-09-23 23:43:05.334640 Save lines= []
+2020-09-23 23:43:05.336052 Updating csv file
+2020-09-23 23:43:05.336428 Updated csv file with 0 lines
+2020-09-23 23:43:05.336880 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:05.837890 Reseting the door's relay!
+2020-09-23 23:43:05.839914 Processed 0 lines
+2020-09-23 23:43:05.840420 Save lines= []
+2020-09-23 23:43:05.841696 Updating csv file
+2020-09-23 23:43:05.842069 Updated csv file with 0 lines
+2020-09-23 23:43:05.842522 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:06.343519 Reseting the door's relay!
+2020-09-23 23:43:06.345147 Processed 0 lines
+2020-09-23 23:43:06.345643 Save lines= []
+2020-09-23 23:43:06.346909 Updating csv file
+2020-09-23 23:43:06.347283 Updated csv file with 0 lines
+2020-09-23 23:43:06.347737 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:06.848739 Reseting the door's relay!
+2020-09-23 23:43:06.850591 Processed 0 lines
+2020-09-23 23:43:06.851066 Save lines= []
+2020-09-23 23:43:06.852340 Updating csv file
+2020-09-23 23:43:06.852709 Updated csv file with 0 lines
+2020-09-23 23:43:06.853162 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:07.354154 Reseting the door's relay!
+2020-09-23 23:43:07.355783 Processed 0 lines
+2020-09-23 23:43:07.356257 Save lines= []
+2020-09-23 23:43:07.357520 Updating csv file
+2020-09-23 23:43:07.357890 Updated csv file with 0 lines
+2020-09-23 23:43:07.358349 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:07.859346 Reseting the door's relay!
+2020-09-23 23:43:07.861087 Processed 0 lines
+2020-09-23 23:43:07.861580 Save lines= []
+2020-09-23 23:43:07.862972 Updating csv file
+2020-09-23 23:43:07.863349 Updated csv file with 0 lines
+2020-09-23 23:43:07.863807 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:08.364796 Reseting the door's relay!
+2020-09-23 23:43:08.366423 Processed 0 lines
+2020-09-23 23:43:08.367025 Save lines= []
+2020-09-23 23:43:08.368301 Updating csv file
+2020-09-23 23:43:08.368673 Updated csv file with 0 lines
+2020-09-23 23:43:08.369127 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:08.870132 Reseting the door's relay!
+2020-09-23 23:43:08.871861 Processed 0 lines
+2020-09-23 23:43:08.872341 Save lines= []
+2020-09-23 23:43:08.873598 Updating csv file
+2020-09-23 23:43:08.873965 Updated csv file with 0 lines
+2020-09-23 23:43:08.874422 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
+2020-09-23 23:43:09.375418 Reseting the door's relay!
+2020-09-23 23:43:09.377064 Processed 0 lines
+2020-09-23 23:43:09.377536 Save lines= []
+2020-09-23 23:43:09.378796 Updating csv file
+2020-09-23 23:43:09.379190 Updated csv file with 0 lines
+2020-09-23 23:43:09.379790 input=[1, 1, 0, 0, 0] output=[0, 1, 1, 1, 1]
