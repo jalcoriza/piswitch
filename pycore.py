@@ -8,8 +8,8 @@ import datetime
 import csv
 
 relay_01 = 4 # BCM4, pin7, OUT-01, bulb light
-relay_02 = 17 # BCM17, pin11, OUT-02, garage door
-relay_03 = 27 # BCM27, pin13, OUT-03
+relay_02 = 17 # BCM17, pin11, OUT-02, garage door #1
+relay_03 = 27 # BCM27, pin13, OUT-03, door #2
 relay_04 = 22 # BCM22, pin15, OUT-04
 relay_05 = 10 # BCM10, pin19, OUT-05
 input_01 = 9 # BCM9, pin21, IN-01, short input
@@ -21,6 +21,9 @@ t = 0
 door_hysteresis = False
 door_count = 0
 door_time = 2
+door2_hysteresis = False
+door2_count = 0
+door2_time = 2
 
 pir_hysteresis = False
 pir_count = 0
@@ -31,7 +34,7 @@ pir_time_end = datetime.datetime.strptime('08:00', '%H:%M').time()
 command_file_str = '/home/pi/Projects/piswitch/command.csv'
 
 output_gpio = [GPIO.HIGH, GPIO.HIGH, GPIO.HIGH, GPIO.HIGH, GPIO.HIGH]
-input_gpio = [GPIO.LOW, GPIO.LOW, GPIO.LOW, GPIO.LOW, GPIO.LOW] # input_01(IN-01), input_02(IN-02), light_on(csv), light_off(csv), door(csv)
+input_gpio = [GPIO.LOW, GPIO.LOW, GPIO.LOW, GPIO.LOW, GPIO.LOW, GPIO.LOW] # input_01(IN-01), input_02(IN-02), light_on(csv), light_off(csv), door(csv), door2 (csv)
 
 def show_variables():
     global period
@@ -106,13 +109,17 @@ def read_command2():
                 print(f'{datetime.datetime.now()} command=light,{row[3]}')
                 input_gpio[2] = int(row[3]) 
 
-            if int(row[2]) == 3: # light off command
+            elif int(row[2]) == 3: # light off command
                 print(f'{datetime.datetime.now()} command=light,{row[3]}')
                 input_gpio[3] = int(row[3]) 
 
             elif int(row[2]) == 4: # door command
                 print(f'{datetime.datetime.now()} command=door,{row[3]}')
                 input_gpio[4] = int(row[3]) 
+
+            elif int(row[2]) == 5: # door2 command
+                print(f'{datetime.datetime.now()} command=door,{row[3]}')
+                input_gpio[5] = int(row[3]) 
 
             line_count += 1
 
@@ -167,6 +174,30 @@ def process_door():
                 
     return 0
 
+def process_door2():
+    global door2_hysteresis
+    global door2_count
+    global door2_time
+
+    if (door2_hysteresis): 
+        door2_count += 1;
+        if (door2_count * period) > door2_time:
+            door2_hysteresis = False
+            door2_count = 0
+            input_gpio[5] = GPIO.LOW
+
+    else:
+        if (input_gpio[5] == GPIO.HIGH):
+            output_gpio[2] = GPIO.LOW
+            door2_hysteresis = True
+            print(f'{datetime.datetime.now()} Open/Close the door2!')
+
+        else:
+            output_gpio[2] = GPIO.HIGH
+            print(f'{datetime.datetime.now()} Reseting the door2\'s relay!')
+                
+    return 0
+
 def process_pir():
     global pir_hysteresis
     global pir_count
@@ -207,6 +238,7 @@ def process_pir():
 
 def process_automaton():
     process_door()
+    process_door2()
     process_pir()
 
     return 0
